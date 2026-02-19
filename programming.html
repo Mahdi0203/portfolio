@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MahD - Competitive Programmer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -27,16 +29,16 @@
     <section class="page-section">
         <div class="container">
             <h1 class="page-title">Competitive Programming Journey</h1>
-            <p class="page-subtitle">My journey through competitive programming, from Intra MU to IUPC, ICPC.</p>
+            <p class="page-subtitle">My journey through competitive programming, from Intra MU to National Contest.</p>
 
-            <!-- Stat Banner -->
+            <!-- Statistics Banner -->
             <div class="stats-banner">
                 <div class="stat-item">
-                    <div class="stat-number">200+</div>
+                    <div class="stat-number">250+</div>
                     <div class="stat-label">Contests Participated</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">2100+</div>
+                    <div class="stat-number">2500+</div>
                     <div class="stat-label">Problems Solved</div>
                 </div>
                 <div class="stat-item">
@@ -45,12 +47,309 @@
                 </div>
             </div>
 
-            <!-- Best Achievement Highlight -->
+            <!-- Best Achievement -->
             <div class="best-achievement">
                 <h3>Best Achievement</h3>
-                <div class="achievement-rank">Rank #3</div>
-                <p class="achievement-contest">MU - Inter University Programming Contest 2024 (Sylhet Divisional)</p>
+                <div class="achievement-rank">Rank #23</div>
+                <p class="achievement-contest">Inter University Programming Contest - MU CSE Fest 2025</p>
             </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" onclick="openTab(event, 'contest-participation')">Contest Participation</button>
+                <button class="tab-btn" onclick="openTab(event, 'intramu')">Intra MU</button>
+                <button class="tab-btn" onclick="openTab(event, 'online-judges')">Online Judge Profiles</button>
+            </div>
+
+            <!-- Contest Participation Tab -->
+            <div id="contest-participation" class="tab-content active">
+                <h2 class="section-heading">ICPC, NCPC & IUPC Participation</h2>
+                <p class="section-description">My top performances in national level programming contests</p>
+
+                <!-- Contest Table -->
+                <div class="table-container">
+                    <table class="contest-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Contest Name</th>
+                                <th>Team Name</th>
+                                <th>Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Contest 1 -->
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <strong>Inter University Programming Contest Powered By Phitron</strong>
+                                    <div class="contest-organizer">Bangladesh University of Engineering and Technology</div>
+                                </td>
+                                <td><span class="team-name">MU_Outliers</span></td>
+                                <td><span class="achievement-badge descent">33</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Intra MU Tab -->
+            <div id="intramu" class="tab-content">
+                <h2 class="section-heading">Intra MU Achievements</h2>
+                <p class="section-description">My performances in Metropolitan University programming contests</p>
+
+                <!-- Intra MU Table -->
+                <div class="table-container">
+                    <table class="contest-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Contest Name</th>
+                                <th>Team Name</th>
+                                <th>Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- contest 1 -->
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <strong>Intra Metropolitan University Programming Contest - (IMUPC) 2025</strong>
+                                    <div class="contest-organizer">Metropolitan University</div>
+                                </td>
+                                <td><span class="team-name">MU_nullpoINTer</span></td>
+                                <td><span class="achievement-badge best">🥇 Champion</span></td>
+                            </tr>
+                            <!-- contest 2 -->
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <strong>Intra Metropolitan University Programming Contest - (IMUPC) 2024 </strong>
+                                    <div class="contest-organizer">Metropolitan University</div>
+                                </td>
+                                <td><span class="team-name">MU_semiC00Lon</span></td>
+                                <td><span class="achievement-badge best">🥇 Champion</span></td>
+                            </tr>
+                            <!-- contest 3 -->
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <strong>MU CSE Fest 2023</strong>
+                                    <div class="contest-organizer">Metropolitan University</div>
+                                </td>
+                                <td><span class="team-name">MU_semiC00Lon</span></td>
+                                <td><span class="achievement-badge good">🥈 1st Runner-up</span></td>
+                            </tr>
+                            <!-- contest 4 -->
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <strong>Intra Metropolitan University Programming Contest(solo) 2023 </strong>
+                                    <div class="contest-organizer">Metropolitan University</div>
+                                </td>
+                                <td><span class="team-name">solo</span></td>
+                                <td><span class="achievement-badge best">🥇 Champion (junior)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Online Judge Profiles Tab -->
+            <div id="online-judges" class="tab-content">
+                <h2 class="section-heading">Online Judge Profiles</h2>
+                <p class="section-description">My performance and achievements across various competitive programming
+                    platforms</p>
+
+                <div class="judge-profiles">
+                    <!-- Codeforces   -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-icon codeforces">
+                                <svg viewBox="0 0 24 24" width="48" height="48">
+                                    <path fill="currentColor"
+                                        d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v9c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-9c0-.828.672-1.5 1.5-1.5h3z" />
+                                </svg>
+                            </div>
+                            <div class="judge-info">
+                                <h3>Codeforces</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">1805</div>
+                                <div class="stat-name">Max Rating</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">Expert</div>
+                                <div class="stat-name">Rank</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>Contests Participated:</strong> 140+</p>
+                            <p><strong>Problems Solved:</strong> 1750+</p>
+                        </div>
+                        <a href="https://codeforces.com/profile/MahD" target="_blank" class="judge-link">View
+                            Profile →</a>
+                    </div>
+
+                    <!-- CodeChef   -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-logo codechef">CC</div>
+                            <div class="judge-info">
+                                <h3>CodeChef</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">1901</div>
+                                <div class="stat-name">Max Rating</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">4 Star</div>
+                                <div class="stat-name">Rank</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>Contests Participated:</strong> 50+</p>
+                            <p><strong>Best Contest Rank:</strong> #65 / 3000+ Participants</p>
+                        </div>
+                        <a href="https://www.codechef.com/users/mahdi_talukder" target="_blank" class="judge-link">View
+                            Profile →</a>
+                    </div>
+
+                    <!-- LeetCode   -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-icon leetcode">
+                                <svg viewBox="0 0 24 24" width="48" height="48">
+                                    <path fill="currentColor"
+                                        d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                                </svg>
+                            </div>
+                            <div class="judge-info">
+                                <h3>LeetCode</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">0</div>
+                                <div class="stat-name">Max Rating</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">8</div>
+                                <div class="stat-name">Problems</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>Contest Rating:</strong> 0</p>
+                            <p><strong>Problems Solved:</strong> 8</p>
+                        </div>
+                        <a href="https://leetcode.com/mahdi_talukder" target="_blank" class="judge-link">View Profile
+                            →</a>
+                    </div>
+
+                    <!-- AtCoder -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-logo atcoder">
+                                <svg viewBox="0 0 24 24" width="48" height="48">
+                                    <path fill="currentColor"
+                                        d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM9.2 16.8L4 12l5.2-4.8 1.4 1.6-3.4 3.2 3.4 3.2-1.4 1.6zm5.6 0l-1.4-1.6 3.4-3.2-3.4-3.2 1.4-1.6L20 12l-5.2 4.8z" />
+                                </svg>
+                            </div>
+                            <div class="judge-info">
+                                <h3>AtCoder</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">104 </div>
+                                <div class="stat-name">Max Rating</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">11 Kyu</div>
+                                <div class="stat-name">Rank</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>Problems Solved:</strong> 100+</p>
+                        </div>
+                        <a href="https://atcoder.jp/users/MahD" target="_blank" class="judge-link">View Profile
+                            →</a>
+                    </div>
+
+                    <!-- VJudge -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-logo VJudge">
+                                <img src="https://vjudge.net/favicon.ico" width="48" height="48" alt="VJudge">
+                            </div>
+                            <div class="judge-info">
+                                <h3>VJudge</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">900+</div>
+                                <div class="stat-name">Problems Solved</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>User ID:</strong> MahD</p>
+                        </div>
+                        <a href="https://vjudge.net/user/MahD" target="_blank" class="judge-link">View
+                            Profile →</a>
+                    </div>
+
+                    <!-- Toph -->
+                    <div class="judge-card">
+                        <div class="judge-header">
+                            <div class="judge-logo toph">
+                                <img src="https://toph.co/favicon.ico" width="48" height="48" alt="Toph">
+                            </div>
+                            <div class="judge-info">
+                                <h3>Toph</h3>
+                            </div>
+                        </div>
+                        <div class="judge-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">10+</div>
+                                <div class="stat-name">Problems Solved</div>
+                            </div>
+                        </div>
+                        <div class="judge-details">
+                            <p><strong>Username:</strong> iits_me</p>
+                        </div>
+                        <a href="https://toph.co/u/iits_me" target="_blank" class="judge-link">View Profile →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Remove active class from all buttons
+            var tabButtons = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            // Show the selected tab and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="footer">
@@ -59,4 +358,5 @@
         </div>
     </footer>
 </body>
+
 </html>
